@@ -1,56 +1,79 @@
 <div class="jumbotron">
-  <section>
-    <div class="h1">this is the homepage</div>
-    <p>
+  <section class="content">
+    <p class="h1 floral-white">this is the homepage</p>
+    <p class="floral-white justify-content-center">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
+    <small>NOTE: THIS HAVE NO BACKEND YET. JUST DESIGN</small>
+    <small>WILL CONTINUE TO DEVELOP</small>
   </section>
 </div>
-
+<div class="container">
+</div>
 <div fxLayout="row wrap">
-  <div fxFlex="80%">
-             <!-- Featured Section -->
-               <div class="h1 deep-purple">Featured Novels</div>
-               <div class="container">
-                 <p class="deep-purple">
-                   placeholder
-                 </p>
-               </div>
-
-             <!-- Recommended Section -->
-               <div class="h1 deep-purple">Recommended</div>
-               <div class="container">
-                 <p class="deep-purple">
-                   placeholder
-                 </p>
-               </div>
-
-             <!-- Newly Updates Section -->
-               <div class="h1 deep-purple">Newly Updated</div>
-               <div class="container">
-                 <p class="deep-purple">
-                   placeholder
-                 </p>
-               </div>
-  </div>
-
-  <div fxFlex="20%">
-            <!-- Ranking Section -->
-              <div class="h1 deep-purple">Ranking:</div>
-              <div class="">
-                <ol>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ol>
+  <div class="float-right" fxFlex>
+    <!-- Featured Section -->
+    <div class="container">
+      <div class="h1 deep-purple">Featured Novels</div>
+      <div class="content fadein">
+        <div class="novel-container">
+          <div fxLayout="row" fxLayoutGap="12px">
+            <div *ngFor="let loop of loops">
+              <div fxFlex>
+                <a routerLink="/novel">
+                  <img class="novel-cover-image" src="../assets/img/peafowl.PNG" alt="picture">
+                </a>
+                <p class="deep-purple">
+                  placeholder {{loop}}
+                </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommended Section -->
+    <div class="container">
+      <div class="h1 deep-purple">Recommended</div>
+      <div class="content fadein">
+        <div class="novel-container">
+          <div fxLayout="row" fxLayoutGap="12px">
+            <div *ngFor="let loop of loops">
+              <div fxFlex>
+                <a routerLink="/novel">
+                  <img class="novel-cover-image" src="../assets/img/peafowl.PNG" alt="picture">
+                </a>
+                <p class="deep-purple">
+                  placeholder {{loop}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newly Updates Section -->
+    <div class="container">
+      <div class="h1 deep-purple">Newly Updated</div>
+      <div class="content fadein">
+        <div class="novel-container">
+          <div fxLayout="row" fxLayoutGap="12px">
+            <div *ngFor="let loop of loops">
+              <div fxFlex>
+                  <a routerLink="/novel">
+                    <img class="novel-cover-image" src="../assets/img/peafowl.PNG" alt="picture">
+                  </a>
+                <p class="deep-purple">
+                  placeholder {{loop}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>

@@ -1,0 +1,40 @@
+<div class="container">
+  <div fxLayout="column" fxLayoutGap="12px">
+      <mat-list fxHide fxShow.lt-sm>
+        <div mat-subheader>Novel List</div>
+        <mat-list-item *ngFor="let novel of novels.novel">
+          <img matListAvatar src="../assets/img/peafowl.PNG" alt="cover_image">
+          <p class="deep-purple" mat-line>Title: {{novel.title}}</p>
+          <p class="deep-purple" mat-line>Status: {{novel.status}} </p>
+          <p class="deep-purple" mat-line>Views: {{novel.view_count}}</p>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+      </mat-list>
+      <div fxLayout="row wrap">
+        <div fxShow fxHide.lt-sm fxFlex="25%" *ngFor="let novel of novels.novel">
+          <div class="novel-container">
+            <div fxLayout="row">
+              <img fxFlex class="novel-icon" src="../assets/img/peafowl.PNG" alt="cover_image">
+              <!-- content -->
+              <div fxFlex>
+                <!-- <mat-list>
+                  <div mat-subheader>Information</div>
+                  <mat-list-item>
+                    <p class="deep-purple" mat-line>Title: asdasdwqw</p>
+                    <p class="deep-purple" mat-line>Status: sssss</p>
+                    <p class="deep-purple" mat-line>Views: zxczxc</p>
+                  </mat-list-item>
+                </mat-list> -->
+                <div class="novel-information-padding">
+
+                  <p class="h4 deep-purple" >Title: wwwasdasdasdasdasdasdasd</p>
+                  <p class="h4 deep-purple" >Status: asd</p>
+                  <p class="h4 deep-purple" >Views: asdasdkjh</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

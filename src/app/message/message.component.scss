@@ -1,0 +1,31 @@
+textarea {
+  resize: none;
+  height: 50%;
+  width: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 24px;
+  color: purple;
+}
+
+.message-container {
+  padding: 0.5%;
+  padding-left: 12px;
+}
+
+.message-size {
+  font-size: 24px;
+}
+
+.text-bubble {
+  border-radius: 12px;
+  border: thin solid purple;
+  background-color: lightblue;
+
+}
+
+.chat-box {
+  // border: thin solid purple;
+  height: 500px;
+  overflow: scroll;
+  width: 100%;
+}

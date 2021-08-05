@@ -1,0 +1,36 @@
+<form id="fadein" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <div fxLayout="column" class="form-container">
+
+  <button class="float-right form-button" mat-button mat-dialog-close>&times;</button>
+    <p class="h2 jumbotron floral-white">Register</p>
+    <mat-form-field fxFlex>
+      <mat-label for="first-name">First Name: </mat-label>
+      <input matInput id="first-name" type="text" formControlName="firstName" required>
+    </mat-form-field>
+
+
+  <mat-form-field fxFlex>
+    <mat-label for="last-name">Last Name: </mat-label>
+    <input matInput id="last-name" type="text" formControlName="lastName" required>
+  </mat-form-field>
+
+  <mat-form-field fxFlex>
+    <mat-label for="email">Email: </mat-label>
+    <input matInput id="email" type="email" formControlName="email" required>
+    <mat-error>Email is invalid</mat-error>
+  </mat-form-field>
+
+  <mat-form-field fxFlex>
+    <mat-label for="password">Password: </mat-label>
+    <input matInput  id="password" type="password" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$"  formControlName="password" required>
+    <mat-error>password must be 6 characters have alteast 1 number and 1 capital letter</mat-error>
+  </mat-form-field>
+
+    <button fxFlex type="submit" mat-raised-button color="primary" [disabled]="!registerForm.valid">Register</button>
+  </div>
+
+
+</form>
+Value: {{form | json}}<br>
+Status: {{registerForm.status}}<br>
+Valid?: {{registerForm.valid}}

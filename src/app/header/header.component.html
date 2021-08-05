@@ -1,0 +1,89 @@
+<mat-toolbar color="primary">
+
+  <div fxHide fxShow.lt-sm>
+    <div fxLayout="row" fxLayoutGap="12px">
+      <button fxFlex mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span fxFlex class="h3 floral-white">Novel Reader</span>
+    </div>
+
+    <mat-menu #menu="matMenu">
+      <a routerLink="/" mat-menu-item>
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </a>
+      <a routerLink="/library" mat-menu-item>
+        <mat-icon>book</mat-icon>
+        <span>Library</span>
+      </a>
+      <button mat-menu-item disabled>
+        <mat-icon>favorite</mat-icon>
+        <span>Favorite</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_on</mat-icon>
+        <span>Notification</span>
+      </button>
+    </mat-menu>
+  </div>
+
+  <div fxShow fxHide.lt-sm fxLayout="row" fxLayoutGap="12px">
+    <div fxFlex>
+      <a routerLink="/" mat-button>
+        <span class="h3 floral-white">Home</span>
+      </a>
+    </div>
+
+    <div fxFlex>
+      <a routerLink="/library" mat-button>
+        <span class="h3 floral-white">Library</span>
+      </a>
+    </div>
+
+    <div fxFlex>
+      <button mat-button>
+        <span class="h3 floral-white">Favorite</span>
+      </button>
+    </div>
+
+    <div fxFlex>
+      <a routerLink="/" mat-button>
+        <span class="h3 floral-white">Notification</span>
+      </a>
+    </div>
+  </div>
+
+  <span class="flex-space"></span>
+
+  <div>
+    <button mat-icon-button [matMenuTriggerFor]="menu_right" aria-label="Example icon-button with a menu">
+      <mat-icon>settings</mat-icon>
+    </button>
+
+    <mat-menu #menu_right="matMenu">
+
+      <a routerLink="/profile" mat-menu-item>
+        <mat-icon>account_circle</mat-icon>
+        <span>Profile</span>
+      </a>
+
+      <button mat-menu-item>
+        <mat-icon>upload</mat-icon>
+        <span>Upload</span>
+      </button>
+
+      <button mat-menu-item>
+        <mat-icon>message</mat-icon>
+        <span>Message</span>
+      </button>
+
+      <button mat-menu-item>
+        <mat-icon>logout</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </div>
+
+
+</mat-toolbar>

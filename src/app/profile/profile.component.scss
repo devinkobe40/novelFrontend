@@ -1,0 +1,26 @@
+.active-link {
+  color: rgb(56, 0, 89);
+  background: white;
+}
+
+tr.active {
+  background: white;
+}
+
+
+tr:hover a {
+  color: rgb(56, 0, 89);
+}
+
+tr:hover {
+  background: white;
+}
+
+tr{
+  background: rgb(56, 0, 89);
+}
+
+a {
+  color: floralwhite;
+  text-decoration: none;
+}
