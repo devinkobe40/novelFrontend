@@ -1,11 +1,11 @@
 {
-  "name": "novel-frontend",
+  "name": "novelFrontend",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "_note": "ng serve is used for development and node server.js for deployment",
     "heroku-postbuild": "ng build --prod",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
