@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "_note": "ng serve is used for development and node server.js for deployment",
+    "heroku-postbuild": "ng build --prod",
+    "start": "node server.js",
+    "build": "ng build prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -26,6 +28,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "express": "^4.17.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
