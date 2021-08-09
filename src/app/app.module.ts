@@ -15,6 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { MatTabsModule } from '@angular/material/tabs';
 
 // COMPONENTS
 import { HomepageComponent } from './homepage/homepage.component';
@@ -57,7 +58,8 @@ import { LibraryComponent } from './library/library.component';
     MatIconModule,
     MatMenuModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatTabsModule,
   ],
   entryComponents: [
     ProfileRegisterComponent

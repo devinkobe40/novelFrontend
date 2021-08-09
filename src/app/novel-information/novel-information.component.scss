@@ -4,4 +4,19 @@
 }
 .chapter-content {
   padding: 12px;
+  height: 250px;
+  overflow-y: scroll;
+}
+.cover-image {
+  width: auto;
+  height: auto;
+}
+
+.comment-content {
+  padding: 12px;
+  justify-content: center;
+}
+
+.tab-group {
+  width: 200px;
 }

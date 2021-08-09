@@ -1,14 +1,14 @@
 <div class="container">
 <div fxLayout="row wrap">
-  <div fxLayout="column">
+  <div fxLayout="column"fxFlex fxFlex.lt-md="100%">
     <div fxLayout="row">
-      <div fxFlex="100%" class="container">
+      <div fxFlex.lt-md="100%" fxFlex class="container">
         <img class="responsive" src="../assets/img/peafowl.PNG" alt="picture">
       </div>
 
     </div>
     <div fxLayout="row">
-      <table class="container" fxFlex="100%">
+      <table class="container" fxFlex fxFlex.lt-md="100%">
         <tr>
           <th>
             <p >
@@ -50,7 +50,7 @@
     </div>
   </div>
 
-  <div fxFlex class="container">
+  <div fxFlex fxFlex.lt-md="100%" class="container">
     <div>
         <router-outlet></router-outlet>
     </div>

@@ -4,10 +4,20 @@
 }
 
 .novel-icon {
-  width: 50%;
-  height: 240px;
+  width: 25%;
+  height: auto;
+}
+
+img:hover {
+  transform: scale(1.1);
 }
 
 .novel-information-padding {
+  padding: 6px;
+  // border:  thin solid black;
+  width: 100%;
+}
+
+.info-padding {
   padding: 6px;
 }
