@@ -3,24 +3,23 @@
   background: white;
 }
 
-tr.active {
-  background: white;
-}
-
-
-tr:hover a {
-  color: rgb(56, 0, 89);
+th {
+  cursor: pointer;
 }
 
 tr:hover {
   background: white;
+
+  // purple
+  color: rgb(56, 0, 89);
 }
 
 tr{
   background: rgb(56, 0, 89);
 }
 
-a {
-  color: floralwhite;
-  text-decoration: none;
+.information-container {
+  width: auto;
+  height: 640px;
+  overflow-y: scroll;
 }

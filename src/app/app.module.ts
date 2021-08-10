@@ -28,6 +28,8 @@ import { CircleComponent } from './circle/circle.component';
 import { ProfileRegisterComponent } from './profile-register/profile-register.component';
 import { HeaderComponent } from './header/header.component';
 import { LibraryComponent } from './library/library.component';
+import { TruncatePipe } from './truncate.pipe';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { LibraryComponent } from './library/library.component';
     WorksComponent,
     ProfileRegisterComponent,
     HeaderComponent,
-    LibraryComponent
+    LibraryComponent,
+    TruncatePipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

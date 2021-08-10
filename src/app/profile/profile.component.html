@@ -1,6 +1,6 @@
 <div class="container">
 <div fxLayout="row wrap">
-  <div fxLayout="column"fxFlex fxFlex.lt-md="100%">
+  <div fxLayout="column" fxFlex fxFlex.lt-md="100%">
     <div fxLayout="row">
       <div fxFlex.lt-md="100%" fxFlex class="container">
         <img class="responsive" src="../assets/img/peafowl.PNG" alt="picture">
@@ -9,39 +9,38 @@
     </div>
     <div fxLayout="row">
       <table class="container" fxFlex fxFlex.lt-md="100%">
-        <tr>
+        <tr routerLink="/profile/about" routerLinkActive="active-link">
+          <th>
+            <p>
+              About
+            </p>
+          </th>
+        </tr>
+        <tr routerLink="/profile/messages" routerLinkActive="active-link">
+          <th>
+            <p>
+              Message
+            </p>
+          </th>
+        </tr>
+        <tr routerLink="/profile/circle" routerLinkActive="active-link" >
           <th>
             <p >
-              <a routerLink="/profile/about" routerLinkActive="active-link">About</a>
+              Circle
+            </p>
+          </th>
+        </tr>
+        <tr routerLink="/profile/works" routerLinkActive="active-link" >
+          <th>
+            <p >
+              Works
             </p>
           </th>
         </tr>
         <tr>
           <th>
-            <p >
-              <a routerLink="/profile/messages" routerLinkActive="active-link">Message</a>
-            </p>
-          </th>
-        </tr>
-        <tr>
-          <th>
-            <p >
-              <a routerLink="/profile/circle" routerLinkActive="active-link" >Circle</a>
-            </p>
-          </th>
-
-        </tr>
-        <tr>
-          <th>
-            <p >
-              <a routerLink="/profile/works" routerLinkActive="active-link" >Works</a>
-            </p>
-          </th>
-        </tr>
-        <tr>
-          <th>
-            <p >
-              <a href="#">Following</a>
+            <p>
+              Following
             </p>
           </th>
         </tr>
@@ -50,10 +49,8 @@
     </div>
   </div>
 
-  <div fxFlex fxFlex.lt-md="100%" class="container">
-    <div>
+  <div fxFlex fxFlex.lt-md="100%" class="container information-container">
         <router-outlet></router-outlet>
-    </div>
 
   </div>
 </div>

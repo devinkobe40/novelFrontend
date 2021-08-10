@@ -3,14 +3,21 @@
   padding: 12px;
 }
 
+.select:hover {
+    cursor: pointer;
+}
+
+.novel-information {
+  width: 50%;
+  height: auto;
+  border: thin solid black;
+}
+
 .novel-icon {
-  width: 25%;
+  width: 250px;
   height: auto;
 }
 
-img:hover {
-  transform: scale(1.1);
-}
 
 .novel-information-padding {
   padding: 6px;

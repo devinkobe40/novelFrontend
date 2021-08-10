@@ -5,34 +5,24 @@
         <mat-list-item mat-raised-button *ngFor="let novel of novels.novel" routerLink="/novel">
           <img matListAvatar src="../assets/img/peafowl.PNG" alt="cover_image">
           <p class="deep-purple" mat-line>Title: {{novel.title}}123123123123123</p>
-          <p class="deep-purple" mat-line>Sypnosis: {{novel.sypnosis}} qweqweqweqwe</p>
-          <p class="deep-purple" mat-line>Status: {{novel.status}} qweqweqweqwe</p>
-          <p class="deep-purple" mat-line>Views: {{novel.view_count}}asdasdasd</p>
+          <p class="deep-purple" mat-line>Sypnosis: {{novel.sypnosis}}
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </mat-list-item>
         <mat-divider></mat-divider>
       </mat-list>
       <div fxLayout="row wrap">
           <div fxShow fxHide.lt-md fxFlex="50%" *ngFor="let novel of novels.novel">
-            <div class="novel-container">
-
-                <a routerLink="/novel">
+            <div routerLink="/novel" class="novel-container select">
+                <!-- <a routerLink="/novel"> -->
                   <img fxFlex class="novel-icon" src="../assets/img/peafowl.PNG" alt="cover_image">
-                </a>
+                <!-- </a> -->
                 <!-- content -->
-                <div fxFlex>
+                <div class="novel-information"  fxFlex>
                     <div fxLayout="column" class="novel-information-padding">
+                        <p fxFlex class="h5 deep-purple info-padding bold" >The quick brwon fox jumps over the lazy dog</p>
 
-                        <div class="h3 deep-purple">Title: </div>
-                        <p fxFlex class="h5 deep-purple info-padding" >The quick brwon fox jumps over the lazy dog</p>
-
-                        <div class="h3 deep-purple">Sypnosis: </div>
-                        <p fxFlex class="h5 deep-purple info-padding" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut l...</p>
-
-                        <div class="h3 deep-purple">Status</div>
-                        <p class="h5 deep-purple info-padding">Completed.</p>
-
-                        <div class="h3 deep-purple">Views </div>
-                        <p fxFlex class="h5 deep-purple info-padding" >1,894,445</p>
+                        <div class="h4 deep-purple">Sypnosis: </div>
+                        <p fxFlex class="h6 deep-purple info-padding" >{{ 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat ' | truncate:350 }}</p>
                     </div>
                 </div>
             </div>
