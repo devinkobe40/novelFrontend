@@ -1,3 +1,6 @@
+$background : #d4d8e0;
+$foreground : #a8a8a8;
+
 .novel-content {
   padding: 12px;
   justify-content: center;
@@ -15,6 +18,11 @@
 .comment-content {
   padding: 12px;
   justify-content: center;
+}
+
+button.disabled {
+  color: $foreground;
+  background: $background;
 }
 
 .tab-group {

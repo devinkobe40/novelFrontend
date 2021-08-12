@@ -1,5 +1,6 @@
+$primary-color: #683cb4;
 .active-link {
-  color: rgb(56, 0, 89);
+  color: $primary-color;
   background: white;
 }
 
@@ -11,11 +12,11 @@ tr:hover {
   background: white;
 
   // purple
-  color: rgb(56, 0, 89);
+  color: $primary-color;
 }
 
 tr{
-  background: rgb(56, 0, 89);
+  background: $primary-color;
 }
 
 .information-container {

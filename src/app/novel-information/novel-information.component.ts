@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NovelInformationComponent implements OnInit {
 
+  is_subscribe:boolean = false;
+
   comments:any = {
     "comments" : [
       {

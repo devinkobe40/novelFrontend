@@ -3,10 +3,9 @@
     <div fxFlex>
 
   <!-- Illustration Section -->
-        <p class="h2 deep-purple">
-          A quick brown forx jumps over the lazy dog.
-        </p>
-
+    <p class="h2 deep-purple">
+      A quick brown forx jumps over the lazy dog.
+    </p>
         <div fxLayout="row wrap">
           <div fxFlex class="container" fxFlex.lt-lg="100%">
             <img class="responsive" src="../assets/img/peafowl.PNG" alt="picture">
@@ -34,6 +33,10 @@
                     </p>
                     <p class="deep-purple">
                       Status: <span class="h4 deep-purple">Ongoing</span>
+                    </p>
+                    <p class="deep-purple">
+                      <button mat-raised-button color="accent" *ngIf="!is_subscribe" (click)="this.is_subscribe === false ? this.is_subscribe = true  : this.is_subscribe = false">Subscribe</button>
+                      <button mat-raised-button class="disabled" *ngIf="is_subscribe" (click)="this.is_subscribe === true ? this.is_subscribe = false  : this.is_subscribe = true">Subscribed</button>
                     </p>
                   </div>
                 </div>
