@@ -5,8 +5,8 @@
     "ng": "ng",
     "_note": "ng serve is used for development and node server.js for deployment",
     "heroku-postbuild": "ng build --prod",
-    "_start": "node server.js",
-    "start": "ng serve",
+    "start": "node server.js",
+    "_start": "ng serve",
     "build": "ng build prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
