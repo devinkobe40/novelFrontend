@@ -16,6 +16,10 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatCommonModule } from '@angular/material/core';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 // COMPONENTS
 import { HomepageComponent } from './homepage/homepage.component';
@@ -30,6 +34,7 @@ import { HeaderComponent } from './header/header.component';
 import { LibraryComponent } from './library/library.component';
 import { TruncatePipe } from './truncate.pipe';
 import { FooterComponent } from './footer/footer.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +50,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     LibraryComponent,
     TruncatePipe,
-    FooterComponent
+    FooterComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -64,6 +70,10 @@ import { FooterComponent } from './footer/footer.component';
     MatDividerModule,
     MatListModule,
     MatTabsModule,
+    MatCommonModule,
+    MatSidenavModule,
+    MatChipsModule,
+    MatAutocompleteModule,
   ],
   entryComponents: [
     ProfileRegisterComponent

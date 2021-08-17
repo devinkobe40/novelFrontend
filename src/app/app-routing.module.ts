@@ -8,11 +8,13 @@ import { NovelInformationComponent } from './novel-information/novel-information
 import { HomepageComponent } from './homepage/homepage.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LibraryComponent } from './library/library.component';
+import { DashboardComponent } from "./dashboard/dashboard.component";
 
 const routes: Routes = [
   {path:'', redirectTo:'/homepage', pathMatch:'full'},
-  {path:'library', component:LibraryComponent},
   {path:'homepage', component:HomepageComponent},
+  {path:'dashboard', component:DashboardComponent},
+  {path:'library', component:LibraryComponent},
   {path: 'profile', component:ProfileComponent,
    children: [
      {path: 'about', component: AboutComponent},
