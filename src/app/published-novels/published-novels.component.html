@@ -1,0 +1,16 @@
+<mat-accordion>
+  <ng-container *ngFor="let loop of loops">
+    <mat-expansion-panel class="novel-contents">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Novel Title
+        </mat-panel-title>
+        <mat-panel-description>
+          Short summary
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <a mat-raised-button color="primary">Add Chapter</a>
+    </mat-expansion-panel>
+    <mat-divider></mat-divider>
+  </ng-container>
+</mat-accordion>

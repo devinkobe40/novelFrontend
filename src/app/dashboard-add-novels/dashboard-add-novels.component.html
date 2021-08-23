@@ -1,0 +1,48 @@
+<div class="content" fxLayout="column wrap" fxLayoutGap="12px">
+    <div fxFlex>
+      <form>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter Title Here...</mat-label>
+            <input matInput>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+              <mat-label>Description</mat-label>
+              <textarea matInput placeholder="Enter description here..."></textarea>
+            </mat-form-field>
+
+            <mat-form-field class="chip-list" appearance="fill">
+            <mat-label>Genre</mat-label>
+            <mat-chip-list #chipList aria-label="Genre selection">
+              <mat-chip
+                color="primary"
+                *ngFor="let genre of genres"
+                [selectable]="selectable"
+                [removable]="removable"
+                (removed)="remove(genre)">
+                {{genre}}
+                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+              </mat-chip>
+              <input
+                placeholder="Add genre...."
+                #genreInput
+                [formControl]="genreCtrl"
+                [matAutocomplete]="auto"
+                [matChipInputFor]="chipList"
+                [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                (matChipInputTokenEnd)="add($event)">
+            </mat-chip-list>
+            <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+              <mat-option *ngFor="let genre of filteredGenres | async" [value]="genre">
+                {{genre}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+
+        <p>
+          <button mat-raised-button color="accent">Add Novel</button>
+        </p>
+
+        </form>
+    </div>
+</div>

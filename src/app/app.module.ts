@@ -20,6 +20,7 @@ import { MatCommonModule } from '@angular/material/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 // COMPONENTS
 import { HomepageComponent } from './homepage/homepage.component';
@@ -35,6 +36,8 @@ import { LibraryComponent } from './library/library.component';
 import { TruncatePipe } from './truncate.pipe';
 import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardAddNovelsComponent } from './dashboard-add-novels/dashboard-add-novels.component';
+import { PublishedNovelsComponent } from './published-novels/published-novels.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +54,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     LibraryComponent,
     TruncatePipe,
     FooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    DashboardAddNovelsComponent,
+    PublishedNovelsComponent
   ],
   imports: [
     BrowserModule,
@@ -74,6 +79,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatSidenavModule,
     MatChipsModule,
     MatAutocompleteModule,
+    MatExpansionModule,
   ],
   entryComponents: [
     ProfileRegisterComponent

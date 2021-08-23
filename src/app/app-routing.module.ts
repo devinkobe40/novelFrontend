@@ -9,20 +9,28 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LibraryComponent } from './library/library.component';
 import { DashboardComponent } from "./dashboard/dashboard.component";
+import { DashboardAddNovelsComponent } from './dashboard-add-novels/dashboard-add-novels.component';
+import { PublishedNovelsComponent } from "./published-novels/published-novels.component";
 
 const routes: Routes = [
   {path:'', redirectTo:'/homepage', pathMatch:'full'},
   {path:'homepage', component:HomepageComponent},
-  {path:'dashboard', component:DashboardComponent},
-  {path:'library', component:LibraryComponent},
-  {path: 'profile', component:ProfileComponent,
+  {path:'dashboard', component:DashboardComponent,
    children: [
-     {path: 'about', component: AboutComponent},
-     {path: 'circle', component: CircleComponent},
-     {path: 'messages', component: MessageComponent},
-     {path: 'works', component: WorksComponent},
+     {path:'', component:ProfileComponent},
+     {path:'add-novels', component:DashboardAddNovelsComponent},
+     {path:'published-novels', component:PublishedNovelsComponent},
    ]
- },
+  },
+  {path:'library', component:LibraryComponent},
+ //  {path: 'profile', component:ProfileComponent,
+ //   children: [
+ //     {path: 'about', component: AboutComponent},
+ //     {path: 'circle', component: CircleComponent},
+ //     {path: 'messages', component: MessageComponent},
+ //     {path: 'works', component: WorksComponent},
+ //   ]
+ // },
   {path: 'novel', component: NovelInformationComponent},
 ];
 
